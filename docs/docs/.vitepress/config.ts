@@ -52,6 +52,8 @@ const description = [
 
 export default defineConfig({
   extends: teekConfig,
+  // 部署到 GitHub Pages 项目站点 (https://qdcxj.github.io/three.js-/) 时通过 BASE 注入前缀，本地开发保持 "/"
+  base: process.env.BASE || "/",
   title: "Three.js 指南",
   description: description,
   cleanUrls: false,
