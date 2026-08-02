@@ -1,0 +1,8 @@
+/* 侧边栏：隐藏分组展开/收起箭头按钮 */
+/* 配合 config.ts 中 collapsed: false，让所有章节强制展开、不可收起 */
+.VPSidebar .caret,
+.VPSidebar .caret-icon,
+.vp-sidebar .caret,
+.vp-sidebar .caret-icon {
+  display: none !important;
+}
